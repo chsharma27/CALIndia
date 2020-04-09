@@ -1,0 +1,79 @@
+<! DOCTYPE html>
+<html lan="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dansing+Script|Orbitron&display=swap">
+		<link rel="stylesheet" href="tabs.css">
+		<title>
+			CALIndia
+		</title>
+		<!--[if lt IE 9]>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/
+                html5shiv.min.js">
+                </script >
+                <![endif]-->
+                <script src="tabs.js"></script>
+		
+        </head>
+        <body>
+                <header>
+                        <h1 align="center">CALIndia</h1>
+                </header>
+                 <!-- Tab links -->
+		<div class="tab">
+			<button style="font-size:25px" class="tablinks" onclick="openPage(event, 'home')" id="default">Home</button>
+			<button class="tablinks" onclick="openPage(event, 'Web_Applications')">Web_Applications</button>
+			<button class="tablinks" onclick="openPage(event, 'Net_security')">Network Security</button>
+			<button class="tablinks" onclick="openPage(event, 'contact')">Contact us</button>
+
+		</div>
+		<!-- Tab content -->
+		<script>
+			document.getElementById('default').click();
+		</script>
+		
+		<div id="home" class="tabcontent">
+		
+		<main>
+                        <p> The world we see today, is nothing less than a <strong><em>complete web</em> of all different types 
+		of electronic devices</strong> available. We all are dependent on them completely economically, personally and in ever
+		y way possible. Don't worry, we are here for your help. Just <a onclick ="openPage(event, 'contact')" ><u>contact us
+		</u></a>for all the different type of web applications <b>you see and you don't see.</b></p>
+		
+		</div>
+
+		<div id="Web_Applications" class="tabcontent">
+			<p>All different types of web applications are too helpful in acheiving all different types of benifits ,
+                ranging from business, educational, lifestyle, sports, a lot more. Thus we re here for te rescue. You don't have
+                to scratch your head, just give it to us, and we are hereer for help. All the services provided to you are
+                listed in the catalog section, we guarantee you complete value for your money. <a onclick ="openPage(event, 'contact')
+		" >contact us</a></p>
+		</div>
+
+		<div id="Net_security" class="tabcontent">
+			<p>As we already stated, we work on every aspect of the web you see. Thus right from the Web Applications, to
+	        their protections, we work on each and every touched and untouched aspect of the web and these web applications. So, i
+		f you got any such app, or have a network of your organization, don't be afraid of such kiddies outside, threatening the
+	        world. Every problem has a solution. Just <a onclick ="openPage(event, 'contact')" >contact us</a>.</p>
+		</div> 
+		
+		<div id="contact" class="tabcontent">
+			<form action = "welcome.php" method="POST">
+                        <fieldset>
+                                <legend>Fill up the following form</legend>
+                                <label for = "name">Name:</label>&nbsp
+                                <input type = "text" name ="name"><br>
+                                <label for = "email"> E-mail:</label>
+                                <input type = "email" name="email"><br>
+                                <input type="submit" value="Submit">
+                        </fieldset>
+	                </form>
+		</div>
+		
+		
+                <footer>
+                        <span>This is underdevelopment work. Thanks for your cooperation</span>
+                </footer>
+        </body>
+</html>
+
